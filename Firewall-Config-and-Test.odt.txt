@@ -1,0 +1,9 @@
+                                                  Firewall Configuration and Testing
+
+1. Opening of firewall by the command sudo ufw for help messege.
+2. Then checking of current rules by the command sudo ufw status numbered.
+3. After checking the rules then adding a rule to block a specific port (e.g., 23 telnet) by the command sudo ufw deny 23/tcp.
+4. Testing the rule which is denied by connecting to that port locally telnet localhost 23. If the connection is refused then the command is correct.
+5. Adding an another rule to allow the ssh protocol sudo ufw allow 22/tcp.
+6. Removing the test blocked rule by the command sudo ufw delete deny 23/tcp.
+7. The firewall filters works to allow, block, or log traffic by the configured policy. They can collect the packet information by ip addresses, ports, and protocols.
